@@ -37,3 +37,7 @@ def start(start_offset=0):
             paused = False
             start_time += time.time() - paused_time
             paused_time = None
+
+
+if __name__ == '__main__':
+    start()
