@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import time
 import datetime as dt
 import signal
