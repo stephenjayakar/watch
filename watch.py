@@ -14,6 +14,8 @@ def signal_handler(sig, frame):
     global paused, paused_time, start_time
     # if second ctrl c
     if paused:
+        print()
+        print(int(paused_time))
         exit(0)
     else:
         paused_time = time.time()
