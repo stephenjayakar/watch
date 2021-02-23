@@ -25,7 +25,7 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 
-def start(start_offset=0):
+def start(start_offset: int = 0):
     global paused, start_time, paused_time
     print()
     while True:
@@ -44,4 +44,10 @@ def start(start_offset=0):
 
 
 if __name__ == '__main__':
-    start()
+    print("How many seconds to offset by?")
+    offset = input()
+    if offset == "":
+        offset = 0
+    else:
+        offset = int(offset)
+    start(offset)
